@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .showme {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="showme">Show me</p>
+  
+
+  <script>
+    if (navigator.userAgent.indexOf("Chrome") !== -1){
+        var asdsad = document.querySelector('.showme');
+
+        asdsad.classList.add('show')
+    }
+  </script>
+</body>
+</html>
