@@ -6,30 +6,27 @@
   <title>Document</title>
 
   <style>
-    .showme {
+    .hide {
       display: none;
     }
     .show {
+      display: block !important;
+    }
+    p {
+      text-align: center;
       display: block;
+      padding: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
     }
   </style>
 </head>
 <body>
 
-  <p class="showme">Show me</p>
+  <p id="paragraph" class="hide">Show me</p>
   
 
-  <script>
-
-var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-
-    if (isChrome && isSafari){
-        var asdsad = document.querySelector('.showme');
-
-        asdsad.classList.add('show')
-    }
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
